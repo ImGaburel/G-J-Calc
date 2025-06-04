@@ -63,7 +63,6 @@ Si quieres mejorar algo:
 - [ ] Agregar determinantes
 - [ ] Matriz inversa
 - [ ] English version
-- [ ] Eigenvalores y eigenvectores
 - [ ] Exportar resultados a PDF
 - [ ] Modo oscuro 🌙
 - [ ] Historial de cálculos
