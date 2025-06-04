@@ -24,10 +24,6 @@ Te permite resolver sistemas de ecuaciones de 2x2 hasta 6x6 con diferentes méto
 
 **[¡Pruébala aquí!](https://imgaburel.github.io/g-j-calc/)**
 
-## 📸 Screenshots
-
-*(Aquí puedes agregar algunas capturas de pantalla cuando las tengas)*
-
 ## 🛠️ ¿Cómo usarla?
 
 1. **Elige cuántas ecuaciones** tienes (2 a 6)
