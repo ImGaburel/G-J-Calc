@@ -17,13 +17,6 @@ class MatrixCalculatorUI {
             this.solver = new GaussJordanMethods();
         }
         
-        if (typeof SystemVerifier === 'undefined') {
-            console.error('SystemVerifier class no está cargada');
-            this.verifier = null;
-        } else {
-            this.verifier = new SystemVerifier();
-        }
-        
         console.log('Inicializando UI...');
         this.initializeEventListeners();
         this.createSystemInput();
@@ -608,33 +601,6 @@ class MatrixCalculatorUI {
         `;
 
         this.mathRenderer.refreshMath();
-    }
-
-    performVerification(originalMatrix, solutionMatrix) {
-        if (!this.verifier) return;
-        
-        const verification = this.verifier.verifySystem(originalMatrix, solutionMatrix);
-        
-        const verificationHTML = `
-            <div class="card mt-3">
-                <div class="card-header">
-                    <h5>
-                        <i class="fas fa-check-double"></i> 
-                        Verificación del Sistema
-                    </h5>
-                </div>
-                <div class="card-body verification-section">
-                    ${verification.steps.map(step => `
-                        <div class="verification-step">
-                            <strong>${step.title}</strong><br>
-                            <span class="ms-3">${step.content}</span>
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
-        `;
-        
-        document.getElementById('stepByStep').insertAdjacentHTML('beforeend', verificationHTML);
     }
 
     getMethodName(methodId) {

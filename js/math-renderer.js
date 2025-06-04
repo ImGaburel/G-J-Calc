@@ -416,32 +416,5 @@ class MathRenderer {
             this.loadMathJax();
         }
     }
-    
-    // ✅ MÉTODO AUXILIAR PARA CARGAR MATHJAX SI NO ESTÁ DISPONIBLE:
-    loadMathJax() {
-        if (typeof MathJax === 'undefined') {
-            // Configuración de MathJax
-            window.MathJax = {
-                tex: {
-                    inlineMath: [['$', '$'], ['\\(', '\\)']],
-                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
-                },
-                options: {
-                    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-                }
-            };
-            
-            // Cargar MathJax desde CDN
-            const script = document.createElement('script');
-            script.src = 'https://polyfill.io/v3/polyfill.min.js?features=es6';
-            script.onload = () => {
-                const mathJaxScript = document.createElement('script');
-                mathJaxScript.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-                mathJaxScript.async = true;
-                document.head.appendChild(mathJaxScript);
-            };
-            document.head.appendChild(script);
-        }
-    }
 
 }
