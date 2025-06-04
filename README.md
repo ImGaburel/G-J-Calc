@@ -22,11 +22,7 @@ Te permite resolver sistemas de ecuaciones de 2x2 hasta 6x6 con diferentes méto
 
 ## 🎮 Demo
 
-**[¡Pruébala aquí!](https://imgaburel.github.io/g-j-calc/)**
-
-## 📸 Screenshots
-
-*(Aquí puedes agregar algunas capturas de pantalla cuando las tengas)*
+**[¡Pruébala aquí!](https://imgaburel.github.io/G-J-Calc/)**
 
 ## 🛠️ ¿Cómo usarla?
 
